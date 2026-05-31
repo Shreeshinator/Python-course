@@ -22,5 +22,5 @@ def display_info(**kwargs):
         info += f"{key}: {value}\n"
     return info.strip()
 
-result_info = display_info(name="Shreesh", age=25, city="New York")  # takes any number and any type of keyword arguments and formats them
+result_info = display_info(Name="Shreesh", Age=25, City="New York")  # takes any number and any type of keyword arguments and formats them
 print(result_info)
