@@ -2,7 +2,7 @@ from abc import ABC, abstractmethod
 
 class Shape(ABC):
 
-    @abstractmethod
+    @abstractmethod # This decorator indicates that the method is abstract and must be implemented by any subclass of Shape.
     def area(self):
         pass
 
@@ -28,7 +28,7 @@ class Triangle(Shape):
     def area(self):
         return self.base * self.height * 0.5
 
-class Pizza(Circle):
+class Pizza(Circle): # Pizza is a subclass of Circle, which means it inherits the properties and methods of the Circle class. This allows us to treat a Pizza object as a Circle when calculating its area, while also adding additional attributes specific to a pizza, such as the topping.
     def __init__(self, topping, radius):
         super().__init__(radius)
         self.topping = topping
